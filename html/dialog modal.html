@@ -1,0 +1,36 @@
+<html>
+
+<head>
+</head>
+
+
+
+<body>
+	<h1>Teste de modal</h1>
+	<button open-modal>Abrir</button>
+
+	<dialog modal>
+		Esse é o modal
+		<button close-modal>Fechar</button>
+	</dialog>
+</body>
+
+
+
+<script>
+	const openModal = document.querySelector("[open-modal]")
+	const closeModal = document.querySelector("[close-modal]")
+	const modal = document.querySelector("[modal]")
+
+	openModal.addEventListener("click", () => {
+		modal.showModal()
+	})
+
+	closeModal.addEventListener("click", () => {
+		modal.close()
+	})
+</script>
+
+
+
+</html>
